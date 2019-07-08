@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="ad1" class="com.lti.springdemo.Address">
+<constructor-arg value="101, anwarganj"></constructor-arg>
+<constructor-arg value="UP"></constructor-arg>
+<constructor-arg value="INDIA"></constructor-arg>
+<constructor-arg value="ASIA"></constructor-arg>
+</bean>
+
+<bean id="e1" class="com.lti.springdemo.Employee">
+<constructor-arg value="101 "></constructor-arg>
+<constructor-arg value="INDIA"></constructor-arg>
+<constructor-arg ref="ad1"></constructor-arg>
+</bean>
+
+<bean id="ad2" class="com.lti.springdemo.Address">
+<constructor-arg value="101, anwarganj"></constructor-arg>
+<constructor-arg value="UP"></constructor-arg>
+<constructor-arg value="INDIA"></constructor-arg>
+<constructor-arg value="655446"></constructor-arg>
+</bean>
+
+<bean id="e2" class="com.lti.springdemo.Employee">
+<constructor-arg value="455"></constructor-arg>
+<constructor-arg value="MIA"></constructor-arg>
+<constructor-arg ref="ad2"></constructor-arg>
+
+</bean>
+
+</beans>

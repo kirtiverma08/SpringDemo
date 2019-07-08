@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd BN/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+<bean id="c1" class="com.lti.springdemo.Country">
+<constructor-arg index="0" value="India"></constructor-arg>
+<constructor-arg index="1" value="456677"></constructor-arg>
+</bean>
+<bean id="s1" class="com.lti.springdemo.Softwares">
+<property name="listOfLang">
+<list>
+<value>Core Java</value>
+<value>Python</value>
+<value>C++</value>
+</list>
+</property>
+</bean>
+</beans>

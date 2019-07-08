@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="Stubean" class="com.lti.springdemo.StudentBean">
+<property name="name" value="GAUTAM"></property>
+<property name="city" value="DELHI"></property>
+</bean>
+</beans>
